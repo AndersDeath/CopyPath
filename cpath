@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pwd | xclip -selection clipboard
+
+if [[ "$1" == '--install' ]]
+then
+	sudo cp ${PWD}"/cpath" "/usr/bin/cpath"
+fi
